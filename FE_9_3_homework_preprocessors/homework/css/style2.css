@@ -1,0 +1,132 @@
+body {
+  background-color: #efefef; }
+
+.logo img {
+  width: 40%; }
+
+.main-wrapper {
+  margin: 0 auto;
+  width: 75%;
+  background-color: #efefef; }
+
+nav {
+  position: absolute;
+  right: 180px;
+  top: 27%;
+  width: 44%;
+  border-top: 2px solid #cfd8dc;
+  border-bottom: 2px solid #cfd8dc;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-around; }
+  nav a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fc5830; }
+
+.toolbar {
+  margin-bottom: 20px; }
+  .toolbar input {
+    position: relative;
+    left: 81%;
+    border: 1px solid #fc5830;
+    padding: 8px 8px 8px 8px;
+    background-color: #efefef; }
+  .toolbar input::-webkit-input-placeholder {
+    color: #fc5830;
+    font-weight: bold; }
+
+.post-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; }
+  .post-list article {
+    width: 45.1%;
+    overflow: hidden;
+    background-color: #ffffff;
+    padding: 10px; }
+    .post-list article img {
+      width: 100%; }
+    .post-list article .post-description {
+      color: #cfd8dc;
+      border-bottom: 2px solid #cfd8dc;
+      padding-bottom: 7px;
+      margin-left: 20px; }
+    .post-list article h3 {
+      margin-left: 20px;
+      margin-top: 5px;
+      margin-bottom: 5px;
+      text-transform: uppercase;
+      color: #6192b4; }
+    .post-list article p {
+      margin-left: 20px;
+      margin-top: 0px;
+      color: grey;
+      line-height: 1.5em; }
+  .post-list article:first-child {
+    height: 720px;
+    margin-bottom: 40px; }
+  .post-list article:nth-child(2) {
+    height: 650px; }
+  .post-list article:nth-child(3) {
+    height: 500px;
+    margin-bottom: 40px; }
+  .post-list article:nth-child(4) {
+    height: 450px; }
+
+#about {
+  margin-top: 70px;
+  margin-bottom: 50px; }
+  #about h1 {
+    text-align: right;
+    color: #fc5830;
+    text-transform: uppercase;
+    margin-bottom: 0px; }
+  #about h1 + p {
+    margin-top: 0px; }
+  #about p {
+    color: grey; }
+  #about div:nth-child(2) {
+    overflow: hidden; }
+
+#contact h1 {
+  text-align: right;
+  margin-bottom: 0px;
+  color: #fc5830; }
+#contact h4 {
+  text-align: right;
+  margin-top: 0px;
+  color: #fc5830;
+  text-transform: uppercase; }
+
+#myForm input {
+  width: 100%;
+  height: 30px;
+  margin-bottom: 20px;
+  text-indent: 20px;
+  background-color: #efefef;
+  border: 1px solid #cfd8dc; }
+#myForm .messageInput {
+  height: 100px;
+  width: 100%;
+  text-indent: 20px;
+  margin-bottom: 10px;
+  background-color: #efefef;
+  border: 1px solid #cfd8dc; }
+#myForm button {
+  width: 170px;
+  position: relative;
+  left: 83.5%;
+  color: #ffffff;
+  background-color: #fc5830;
+  border: none;
+  text-transform: uppercase;
+  cursor: pointer;
+  padding-bottom: 10px;
+  padding-top: 10px; }
+
+footer {
+  color: grey; }
+
+/*# sourceMappingURL=style2.css.map */
