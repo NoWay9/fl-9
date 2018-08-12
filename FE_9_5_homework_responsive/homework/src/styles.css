@@ -1,0 +1,184 @@
+/*
+ * Feel free to change name of colors if you need it
+ * Feel free to add new colors if you need it
+ */
+:root {
+  --bg-color--dark: #0a1223;
+  --bg-color--light: #fff;
+  --link: #5d5d5d;
+  --link--active: #54597d;
+  --link--hover: #54597d;
+  --article-title: #ddd;
+  --article-title--dark: #000;
+  --thumbnail--description: #5d5d5d;
+
+  /* These styles are needed only for media query max-width: 575px */
+
+  /* The 'Up' button (circle button at right bottom corner) */
+  --btn-color: #fff;
+  --btn-bg-color: #5ebcff;
+
+  --navigation-border-bottom: #ddd;
+  --thumbnail-title: #484747;
+}
+
+/* Your styles go here */
+body{
+  background-color: #0a1223;
+}
+
+.active{
+  color: #54597d;
+}
+
+nav{
+  text-align: right;
+  padding-top: 15px;
+}
+
+nav a{
+  color: #5d5d5d;
+  margin-right: 2%;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+nav a:hover{
+  color: #54597d;
+}
+
+nav a:active{
+  color: #54597d;
+}
+
+.main_header{
+  text-align: center;
+  padding-top: 100px;
+  color: #ddd;
+  font-size: 72px;
+  margin-bottom: 100px;
+}
+
+main{
+  margin: 0 auto;
+  width: 82%;
+}
+
+main article{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+main article:nth-child(odd) {
+  flex-direction: row-reverse;
+}
+
+main article div{
+  width: 45%;
+}
+
+.article_image img{
+  width: 100%;
+}
+
+
+.article_text p{
+  text-indent: 20px;
+  color: #5d5d5d;
+  width: 94%;
+  text-align: justify;
+}
+
+.article_text h3{
+  width: 90%;
+  color: #ddd;
+  font-size: 32px;
+  background: linear-gradient(45deg, #fff 33%, #5d5d5d 66%, #5d5d5d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent
+}
+
+
+@media(max-width: 991px ){
+  nav{
+    text-align: center;
+    padding-top: 15px;
+  }
+
+  main article{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .article_text{
+    width: 100%;
+  }
+
+  main article:nth-child(odd){
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media(max-width: 575px){
+
+  body {
+    background-color:#fff;
+  }
+
+  nav a:active {
+    font-weight: bold;
+  }
+
+  .active{
+    font-weight: bold;
+  }
+  
+  nav{
+    display: flex;
+    flex-direction: column;
+  }
+
+  nav a{
+    width: 100%;
+    text-align: left;
+    font-size: 30px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5px;
+    text-decoration: none;
+  }
+
+  .main_header{
+    color: #000;
+  }
+
+
+  .article_text h3{
+    font-size: 10vw;
+    color: #484747;
+    background: unset;   
+    -webkit-text-fill-color: unset;
+    -webkit-background-clip: unset;
+  }
+
+  .article_image{
+    width: 80%;
+  }
+
+  .up_btn{
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    text-align: center;
+    text-decoration: none;  
+    display: block;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 50%;
+    background-color: #5ebcff;
+    color: #fff;
+    box-shadow: 10px 10px 20px #D3D3D3;
+  }
+}
