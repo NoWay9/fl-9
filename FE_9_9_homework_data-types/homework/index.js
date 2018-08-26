@@ -12,7 +12,9 @@ function forEach(arr, func) {
 
 function map(array, funct) {
     var returnedArray = [];
-    forEach(array, function(item){returnedArray.push(funct(item))});
+    forEach(array, function(item){ 
+        returnedArray.push(funct(item))
+        });
     return returnedArray;
 }
 
@@ -41,8 +43,10 @@ function getAdultAppleLovers(data) {
 
 function keys(obj) {
     var objArray = [];
-    for(key in obj){
-       objArray.push(key);
+    for(var key in obj){
+        if(obj.hasOwnProperty(key)){
+            objArray.push(key);
+        }
     }
     return objArray;
 }
@@ -50,8 +54,10 @@ function keys(obj) {
 
 function values(obj) {
    var valArray = [];
-   for(key in obj){
-     valArray.push(obj[key]);
+   for(var key in obj){
+       if(obj.hasOwnProperty(key)){
+        valArray.push(obj[key]);
+       }
    }
    return valArray;
 }
