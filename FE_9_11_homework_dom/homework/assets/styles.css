@@ -1,0 +1,77 @@
+.add-action{
+    width: 88%;
+    margin-left: 30px;
+    border: 1px solid #000;
+    height: 20px;
+}
+
+.new-action{
+    border-bottom: 2px solid #000;
+    padding-bottom: 50px; 
+    width: 96%;
+    margin: 0 auto; 
+}
+
+.main-header{
+    text-align: center;
+    font-weight: 500;
+}
+
+.unchecked-icon{
+    cursor: pointer;
+}
+
+.add-icon{
+    position: relative;
+    top: 11px;
+    cursor: pointer;
+    height: 30px;
+    background: transparent;
+    width: 30px;
+    padding-left: 0px;
+    padding-right: 0px;
+    border: none;
+    margin-left: 20px;
+}
+
+.list-item{
+    display: flex;
+    margin: 0 auto;
+    width: 92%;
+    margin-top: 20px;
+    justify-content: space-between;
+}
+
+.action-text{
+    flex-basis: 88%;
+    margin-top: 7px;
+    color: #000;
+    font-weight: 500;
+    pointer-events: none;
+}
+
+.notif-header{
+    text-align: center;
+}
+
+.remove-action{
+    margin-right: 45px;
+    border: none;
+    width: 30px;
+    height: 30px;
+    padding-right: 0px;
+    padding-left: 0px;
+    background: transparent;
+    cursor: pointer;
+}
+
+.img-footer{
+    height: 100px;
+    position: relative;
+    left: 45vw;
+    top: 30px;
+}
+
+.material-icons{
+    font-size: 32px;
+}
