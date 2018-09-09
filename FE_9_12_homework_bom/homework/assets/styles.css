@@ -1,0 +1,40 @@
+.main-title{
+    text-align: center;
+}
+
+
+.btn-addn-new{
+  text-align: center;
+}
+
+
+.btn-addn-new button{
+    padding: 10px;
+    border: 1px solid;
+    border-radius: 10px;
+}
+
+.add-item-page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.btn-wrap{
+    margin-top: 20px;
+}
+
+.cancel-btn{
+    margin-right: 20px;
+}
+
+.list-styl{
+    list-style-type: none;
+}
+
+.item-styl{
+    display: flex;
+    height: 40px;
+    justify-content: space-around;
+}
