@@ -1,0 +1,132 @@
+@import "variables";
+header{
+    border-bottom:1px solid #d3d3d3;
+}
+
+body{
+    color: #000;
+}
+
+.nopadding{
+    padding: 0;
+}
+
+.main-title{
+    color: @blue;
+    border-bottom: 1px solid @blue;
+    padding-bottom: 5px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.yoga-info{
+   display: flex;
+   justify-content: space-between;
+   .yoga-image{
+     flex-basis: 63%;
+     img{
+         width: 100%;
+     }
+   }
+   .yoga-article{
+       flex-basis: 34%;
+       h4{
+           color: @blue;
+       }
+   }
+}
+
+.related-classes{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    div{
+        flex-basis: 23%;
+        border: 1px solid;
+        img{
+            width: 100%;
+        }
+        p{
+            padding-top: 10px;
+            padding-bottom: 6px;
+            margin-bottom: 0px;
+            text-align: center;
+            color: #ffffff;
+            font-weight: 500;
+        }
+    }
+}
+
+.footer-text{
+    background-color: @grey;
+    padding: 5px 0px 5px 0px;
+    color: #ffffff;
+    text-indent: 25px;
+    font-weight: 500;
+}
+
+.border-red{
+    border-color: @red !important;
+}
+
+.background-red{
+    background-color: @red;
+}
+
+.border-blue{
+    border-color: @blue !important;
+}
+
+.background-blue{
+    background-color: @blue;
+}
+
+.border-yellow{
+    border-color: @orange !important;
+}
+
+.background-yellow{
+    background-color: @orange;
+}
+
+.border-green{
+    border-color: @green !important;
+}
+
+.background-green{
+    background-color: @green;
+}
+
+.navbar{
+    .nav-link {
+        color: #000 !important;
+      }
+    .active{
+        background-color: @blue;
+        .nav-link{
+            color: #ffffff !important;
+        }
+     
+    }
+}
+
+@media (max-width:992px){
+    .yoga-info{
+        flex-direction: column;
+    }
+
+}
+
+@media (max-width:768px){
+    .nopadding{
+        padding: 5px 0px 5px 0px;
+    }
+    .related-classes{
+        flex-direction: row;
+        flex-wrap: wrap;
+        div{
+            flex-basis: 47%;
+            margin-bottom: 15px;
+        }
+    }
+}
